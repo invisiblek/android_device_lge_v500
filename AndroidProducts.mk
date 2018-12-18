@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_vk810.mk
+    $(LOCAL_DIR)/lineage_v500.mk
