@@ -15,7 +15,7 @@
 #
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS := device/lge/v500/overlay
+DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH}/overlay
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -23,9 +23,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wifi
 PRODUCT_COPY_FILES += \
-    device/lge/v500/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
-    device/lge/v500/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
-    device/lge/v500/wifi/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+    $(LOCAL_PATH}/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
+    $(LOCAL_PATH}/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH}/wifi/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # Inherit from gpad83-common
 $(call inherit-product, device/lge/gpad83-common/gpad83-common.mk)
