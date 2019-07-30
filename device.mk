@@ -21,11 +21,5 @@ DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH}/overlay
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.radio.noril=1
 
-# Wifi
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH}/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
-    $(LOCAL_PATH}/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH}/wifi/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
-
 # Inherit from gpad83-common
 $(call inherit-product, device/lge/gpad83-common/gpad83-common.mk)
