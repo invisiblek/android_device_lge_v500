@@ -25,6 +25,7 @@ TARGET_BOOTLOADER_BOARD_NAME := AWIFI
 TARGET_BOOTLOADER_NAME := awifi
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := lineageos_v500_defconfig
 
 # Partitions
